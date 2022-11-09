@@ -50,7 +50,7 @@ route.post(
 );
 
 // updating data
-route.patch("/update/:id", async (req, res) => {
+route.put("/update/:id", async (req, res) => {
   try {
     const stu = {
       course: req.body.course,
