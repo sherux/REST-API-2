@@ -10,7 +10,7 @@ const route = require("./controller/plyers");
 
 app.use("/api", route);
 mongoose
-  .connect("mongodb://localhost:27017/School", {})
+  .connect("mongodb://localhost:27017/School")
   .then(() => {
     console.log("connect the databse");
   })
